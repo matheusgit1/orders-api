@@ -2,7 +2,7 @@
 
 Este projeto é uma parte de um projeto maior, um ecommerce baseado em microserviços.
 
-![Arquitetura](https://gitlab.com/bigenterprise/serverless/handler-eventos/-/blob/develop/imagens/Captura%20de%20tela%202024-01-25%20215933.png?ref_type=heads)
+![Arquitetura](https://github.com/matheusgit1/orders-api/blob/main/assets/arq%20geral.png)
 
 Este repositório se refere api de compras, criação e execução de ordems de compra
 
@@ -84,7 +84,7 @@ yarn fixture
 
 ### Arquitetura geral do projeto
 
-![Arquitetura](https://gitlab.com/bigenterprise/serverless/handler-eventos/-/blob/develop/imagens/Captura%20de%20tela%202024-01-25%20215933.png?ref_type=heads)
+![Arquitetura](https://github.com/matheusgit1/orders-api/blob/main/assets/arq%20geral.png)
 
 ### Arquitetura geral do serviço
 
