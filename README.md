@@ -378,7 +378,3 @@ retorno esperado
     "created_at": "2024-02-01T02:00:09.365Z"
 }
 ```
-
-#### add(num1, num2)
-
-Recebe dois números e retorna a sua soma.
