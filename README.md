@@ -58,7 +58,7 @@ A configuração de filas deve ser feita na abba "queues an streams", crie uma f
 
 Feito isso, você verá uma tela nesse formato:
 
-![rabbitmq](https://www.researchgate.net/publication/305415317/figure/fig1/AS:424470834880512@1478213141595/Schematic-overview-of-the-rabbit-macrophage-differentiation-protocol-Adherent.png)
+![rabbitmq](https://github.com/matheusgit1/orders-api/blob/main/assets/rabbitmq-config.png)
 
 ## Stack utilizada
 
@@ -87,6 +87,8 @@ yarn fixture
 ![Arquitetura](https://gitlab.com/bigenterprise/serverless/handler-eventos/-/blob/develop/imagens/Captura%20de%20tela%202024-01-25%20215933.png?ref_type=heads)
 
 ### Arquitetura geral do serviço
+
+![servico](https://github.com/matheusgit1/orders-api/blob/main/assets/arquitetura%20do%20projeto.png)
 
 ## Sobre o Autor
 
