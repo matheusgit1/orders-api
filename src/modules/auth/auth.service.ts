@@ -8,14 +8,19 @@ const users = [
     password: '123456',
   },
   {
-    id: 1,
+    id: 2,
     username: 'John',
     password: '123456',
   },
   {
-    id: 1,
+    id: 3,
     username: 'Chris',
     password: '123456',
+  },
+  {
+    id: 4,
+    username: 'chris',
+    password: 'chris',
   },
 ];
 
