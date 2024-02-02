@@ -13,34 +13,26 @@ export class AuthGuard implements CanActivate {
   constructor(private readonly jwtService: JwtService) {}
 
   canActivate(
-    context: ExecutionContext,
+    context: ExecutionContext, //http
   ): boolean | Promise<boolean> | Observable<boolean> {
     const request: Request = context.switchToHttp().getRequest();
-
-    const token = this.extractTokenFromHeaders(request);
+    const token = this.extractTokenFromHeader(request);
 
     if (!token) {
-      throw new UnauthorizedException('token invalido ou inexistente');
+      throw new UnauthorizedException();
     }
 
     try {
       const payload = this.jwtService.verify(token);
       request['user'] = payload;
       return true;
-    } catch (e) {
-      throw new UnauthorizedException(
-        'você não tem permissão para acessar esse recurso',
-      );
+    } catch (error) {
+      throw new UnauthorizedException();
     }
   }
 
-  private extractTokenFromHeaders(request: Request) {
-    if (!request.headers['authorization']) {
-      throw new UnauthorizedException(
-        'você não tem permissão para acessar esse recurso',
-      );
-    }
-    const [type, token] = request.headers['authorization'].split(' ') ?? [];
-    return type.trim() === 'Bearer' ? token.trim() : undefined;
+  private extractTokenFromHeader(request: Request): string | undefined {
+    const [type, token] = request.headers.authorization?.split(' ') ?? [];
+    return type === 'Bearer' ? token : undefined;
   }
 }
