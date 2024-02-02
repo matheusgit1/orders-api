@@ -2,7 +2,7 @@
 
 Este projeto é uma parte de um projeto maior, um ecommerce baseado em microserviços.
 
-![Arquitetura](https://gitlab.com/bigenterprise/serverless/handler-eventos/-/blob/develop/imagens/Captura%20de%20tela%202024-01-25%20215933.png?ref_type=heads)
+![Arquitetura](https://github.com/matheusgit1/orders-api/blob/main/assets/arq%20geral.png)
 
 Este repositório se refere api de compras, criação e execução de ordems de compra
 
@@ -84,7 +84,7 @@ yarn fixture
 
 ### Arquitetura geral do projeto
 
-![Arquitetura](https://gitlab.com/bigenterprise/serverless/handler-eventos/-/blob/develop/imagens/Captura%20de%20tela%202024-01-25%20215933.png?ref_type=heads)
+![Arquitetura](https://github.com/matheusgit1/orders-api/blob/main/assets/arq%20geral.png)
 
 ### Arquitetura geral do serviço
 
@@ -378,7 +378,3 @@ retorno esperado
     "created_at": "2024-02-01T02:00:09.365Z"
 }
 ```
-
-#### add(num1, num2)
-
-Recebe dois números e retorna a sua soma.
